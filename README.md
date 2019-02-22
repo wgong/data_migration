@@ -21,9 +21,11 @@ d be reproducible with the expectation that the **ETL would run daily**.
 # Implementation details
 
 * Install PostgreSQL
-* Analyzed .json file and decided to create two tables: dm_orders, dm_line_items.
+* Analyzed .json file and decided to create two tables: `dm_orders`, `dm_line_items`.
+
   DDL script is found at `./scripts/data_migration.sql`
 * write python program to parse .json file and load data into above 2 tables. 
+
   For good performance, we use psycopg2.extras.execute_values API for batch insert.
   Code is at `./src/load_json_data.py`
 
@@ -32,6 +34,8 @@ see `run.sh` shell script, e.g.
 
 ```
 $ python ./src/load_json_data.py -i ./input/2017-11-10.json -p ./input/batch_size.cfg 
+
+Processed (802, 2010) rows in 0.085 sec
 ```
 
 # Test case
