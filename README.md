@@ -43,8 +43,6 @@ Processed (802, 2010) rows in 0.085 sec
 
 # To Do
 
-## Support data.zip as file input 
-
 ## Import CSV file into table using COPY statement  
 `http://www.postgresqltutorial.com/import-csv-file-into-posgresql-table/`
 
