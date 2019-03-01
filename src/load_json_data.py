@@ -159,7 +159,7 @@ def load_json_data(file_in, file_param):
     FLAG_CLEANUP = False  # delete rows for next load
     FLAG_VERIFY = False  # read back for verification
 
-    FLAG_PG_LOCAL = True
+    FLAG_PG_LOCAL = False
 
     if FLAG_PG_LOCAL:
         db_host = os.environ.get('LOCAL_PG_DB_HOST')
