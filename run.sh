@@ -11,4 +11,5 @@
 # Processed (802, 2010) rows in 0.085 sec
 
 # zip
-python ./src/load_json_data.py -i ./input/test.zip -p ./input/batch_size.cfg
+# python ./src/load_json_data.py -i ./input/test.zip -p ./input/batch_size.cfg
+python ./src/load_json_data.py -i ./input/data.zip -p ./input/batch_size.cfg

@@ -37,6 +37,13 @@ see `run.sh` shell script, e.g.
 $ python ./src/load_json_data.py -i ./input/2017-11-10.json -p ./input/batch_size.cfg 
 
 Processed (802, 2010) rows in 0.085 sec
+
+BATCH_SIZE=200:
+Processed 25000 orders / 60555 line_items in 2.112 sec
+
+BATCH_SIZE=800:
+Processed 25000 orders / 60555 line_items in 2.157 sec
+
 ```
 
 # Test case
